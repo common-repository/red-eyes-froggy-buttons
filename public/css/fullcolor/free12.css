@@ -1,0 +1,43 @@
+.refbutton.premium.free12>.refbutton-instance {
+	color: var(--text-color) !important;
+	background: transparent !important;
+	background-color: transparent !important;
+	border: calc(var(--border-width)*1px) solid var(--br-color) !important;
+	overflow: hidden !important;
+	border-radius: var(--border-radius) !important;
+}
+
+.refbutton.premium.free12 .refbutton-instance,
+.refbutton.premium.free12 .refbutton-instance *{
+	color: var(--text-color) !important;
+	fill: var(--text-color) !important;
+	transition: all var(--transition) cubic-bezier(0.77, 0, 0.175, 1) !important;
+}
+
+.refbutton.premium.free12 .refbutton-instance:not([disabled]):hover,
+.refbutton.premium.free12 .refbutton-instance:not([disabled]):hover *{
+	color: var(--text-h-color) !important;
+	fill: var(--text-h-color) !important;
+}
+
+.refbutton.premium.free12 .refbutton-instance:not([disabled]):hover {
+	border-color: var(--br-h-color) !important;
+	background: transparent !important;
+	background-color: transparent !important;
+}
+
+.refbutton.premium.free12>.refbutton-instance::after {
+	content: "" !important;
+	position: absolute !important;
+	height: 0% !important;
+	left: 50% !important;
+	top: 50% !important;
+	width: 150% !important;
+	z-index: -1 !important;
+	background: var(--bg-h-color) !important;
+	transform: translateX(-50%) translateY(-50%) !important;
+}
+
+.refbutton.premium.free12>.refbutton-instance:not([disabled]):hover:after {
+	height: 140% !important;
+}

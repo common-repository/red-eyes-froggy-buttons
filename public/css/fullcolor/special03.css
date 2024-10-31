@@ -1,0 +1,75 @@
+.refbutton.premium.special03>.refbutton-instance {
+	position: relative !important;
+	background: transparent !important;
+	background-color: transparent !important;
+	color: transparent !important;
+	border: calc(var(--border-width)*1px) solid var(--br-color) !important;
+	border-radius: var(--border-radius) !important;
+}
+
+.refbutton.premium.special03 .refbutton-instance,
+.refbutton.premium.special03 .refbutton-instance *{
+	color: transparent !important;
+	fill: transparent !important;
+	transition: all var(--transition) cubic-bezier(0.77, 0, 0.175, 1) !important;
+}
+
+.refbutton.premium.special03 .refbutton-instance:not([disabled]):hover,
+.refbutton.premium.special03 .refbutton-instance:not([disabled]):hover *{
+	background: transparent !important;
+	background-color: transparent !important;
+	color: transparent !important;
+	fill: transparent !important;
+}
+
+.refbutton.premium.special03>.refbutton-instance::after,
+.refbutton.premium.special03>.refbutton-instance::before {
+	border-radius: var(--border-radius) !important;
+	font-size: var(--font-size)!important;
+}
+
+.refbutton.premium.special03>.refbutton-instance::before {
+	content: attr(data-before)!important;
+	display: flex!important;
+	justify-content: center!important;
+	align-items: center!important;
+	background: var(--bg-h-color) !important;
+	color: var(--text-h-color) !important;
+	top: 0!important;
+	left: 100%!important;
+	transition: all var(--transition)!important;
+	height: 100%!important;
+	width: 100%!important;
+	position: absolute!important;
+	transform: scale(0) rotatey(0)!important;
+	opacity: 0!important;
+}
+
+.refbutton.premium.special03>.refbutton-instance:not([disabled]):hover::before {
+	transform: scale(1) rotatey(360deg)!important;
+	left: 0!important;
+	opacity: 1!important;
+}
+
+.refbutton.premium.special03>.refbutton-instance::after {
+	content: attr(data-after)!important;
+	background: var(--bg-color) !important;
+	color: var(--text-h-color) !important;
+	display: flex!important;
+	justify-content: center!important;
+	align-items: center!important;
+	top: 0!important;
+	left: 0!important;
+	transition: all 1s!important;
+	height: 100%!important;
+	width: 100%!important;
+	position: absolute!important;
+	transform: scale(1) rotatey(0)!important;
+	opacity: 1!important;
+}
+
+.refbutton.premium.special03>.refbutton-instance:not([disabled]):hover::after {
+	transform: scale(0) rotatey(360deg)!important;
+	left: -100%!important;
+	opacity: 0!important;
+}

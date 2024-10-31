@@ -1,0 +1,59 @@
+.refbutton.premium.special05 {
+	perspective: 1500px!important;
+	display: flex!important;
+}
+
+.refbutton.premium.special05>.refbutton-instance {
+	position: relative !important;
+	background: transparent !important;
+	color: transparent !important;
+	transform-style: preserve-3d !important;
+	transform: translateZ(calc(((var(--border-width) + 1) * -1) * 1px)) !important;
+	transition: transform var(--transition) !important;
+	overflow: visible !important;
+}
+
+.refbutton.premium.special05>.refbutton-instance:not([disabled]):hover {
+    /* background: transparent !important;
+    background-color: transparent !important;
+    color: transparent !important;	 */
+	transform: translateZ(calc(((var(--button-height-val) / 2) * -1) * 1px)) rotateX(-90deg)!important;
+}
+
+.refbutton.premium.special05>.refbutton-instance::before,
+.refbutton.premium.special05>.refbutton-instance::after {
+	position: absolute !important;
+	content: attr(data-after-before) !important;
+	height: 100% !important;
+	width: 100% !important;
+	top: 0 !important;
+	left: 0 !important;
+	display: flex !important;
+	align-items: center !important;
+	justify-content: center !important;
+	border: calc(var(--border-width) * 1px) solid var(--br-color) !important;
+	box-sizing: border-box !important;
+	border-radius: var(--border-radius) !important;
+	font-size: var(--font-size)!important;
+}
+
+.refbutton.premium.special05>.refbutton-instance::after {
+	color: var(--text-h-color) !important;
+	/* background: var(--bg-h-color) !important; */
+	background: transparent !important;
+	transform: rotateX(90deg) translateZ(calc((var(--button-height-val) / 2) * 1px)) !important;
+}
+
+
+.refbutton.premium.special05>.refbutton-instance::before {
+	color: var(--text-color)!important;
+	background: var(--bg-color)!important;
+	transform: rotateY(0deg) translateZ(calc((var(--button-height-val) / 2) * 1px))!important;
+	/* transform: rotateY(0deg) translateZ(25px)!important; */
+}
+
+.refbutton.premium.special05>.refbutton-instance:not([disabled]):hover::after {
+	border: calc(var(--border-width) * 1px) solid var(--br-h-color)!important;
+	background: var(--bg-h-color)!important;
+	color: var(--text-h-color)!important;
+}

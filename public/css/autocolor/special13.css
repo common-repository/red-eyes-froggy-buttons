@@ -1,0 +1,43 @@
+.refbutton.premium.special13 {
+	background: transparent !important;
+	width: auto !important;
+	border-radius: var(--border-radius) !important;
+	padding: 0 0 !important;
+}
+
+.refbutton.premium.special13,
+.refbutton.premium.special13>.refbutton-instance {
+	width: var(--button-actual-width) !important;
+}
+
+.refbutton.premium.special13 > .refbutton-instance {
+	--h: var(--button-height);
+	line-height: var(--h) !important;
+	color: var(--default-color-a) !important;
+	text-shadow:
+		0 var(--_t, var(--button-height)) var(--contrasted-text-color),
+		0 0 var(--_c, var(--default-color))!important;
+	box-shadow: 0 var(--_t, var(--button-height)) var(--default-color)!important;
+	clip-path: inset(0 0 1px 0)!important;
+	background: linear-gradient(var(--default-color) 0 0) 0 var(--_t, calc((var(--button-height-val) + 4) * 1px ) ) no-repeat!important; 
+	transition: var(--transition), clip-path var(--transition) var(--transition)!important; 
+	border-radius: var(--border-radius) !important;
+	padding: 0 6px !important;
+}
+
+.refbutton.premium.special13 .refbutton-instance *{
+	fill: var(--default-color) !important;
+}
+
+.refbutton.premium.special13 .refbutton-instance:not([disabled]):hover * {
+	fill: var(--contrasted-text-color) !important;
+	transition: var(--transition) var(--transition)!important; 
+}
+
+.refbutton.premium.special13 > .refbutton-instance:not([disabled]):hover {
+	--_t: 0;
+	--_c: var(--default-color-a) !important;
+	clip-path: inset(0 0 calc(-1*var(--button-height)) 0)!important;
+	color: var(--contrasted-text-color) !important;
+	transition: var(--transition) var(--transition), clip-path var(--transition)!important;
+}

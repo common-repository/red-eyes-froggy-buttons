@@ -1,0 +1,19 @@
+.refbutton.premium.premium07 > .refbutton-instance {
+	color: var(--default-color) !important;
+	background: linear-gradient(var(--default-color) 0 0) no-repeat calc(200% - var(--i, 0)*100%) 100% / 200% calc(100%*var(--i, 0) + calc(var(--border-width)*1px)) !important;
+	transition: var(--transition) calc(var(--i, 0) * var(--transition)), background-position var(--transition) calc(var(--transition) - calc(var(--i, 0) * var(--transition))) !important;
+	border-radius: var(--border-radius) !important;
+}
+
+.refbutton.premium.premium07 .refbutton-instance,
+.refbutton.premium.premium07 .refbutton-instance *{
+	color: var(--default-color) !important;
+	fill: var(--default-color) !important;
+	transition: all var(--transition) cubic-bezier(0.77, 0, 0.175, 1) !important;
+}
+
+.refbutton.premium.premium07 .refbutton-instance:not([disabled]):hover,
+.refbutton.premium.premium07 .refbutton-instance:not([disabled]):hover *{
+	color: var(--contrasted-text-color) !important;
+	fill: var(--contrasted-text-color) !important;
+}

@@ -1,0 +1,30 @@
+.refbutton.premium.free05>.refbutton-instance {
+	background: transparent !important;
+	background-color: transparent !important;
+	border: calc(var(--border-width)*1px) solid var(--br-color) !important;
+	color: var(--text-color) !important;
+	transition: var(--transition) !important;
+	border-radius: var(--border-radius) !important;
+}
+
+.refbutton.premium.free05 .refbutton-instance,
+.refbutton.premium.free05 .refbutton-instance *{
+	color: var(--text-color) !important;
+	fill: var(--text-color) !important;
+	transition: all var(--transition) cubic-bezier(0.77, 0, 0.175, 1) !important;
+}
+
+.refbutton.premium.free05 .refbutton-instance:not([disabled]):hover,
+.refbutton.premium.free05 .refbutton-instance:not([disabled]):hover *{
+	color: var(--text-h-color) !important;
+	fill: var(--text-h-color) !important;
+	transition: all var(--transition) cubic-bezier(0.77, 0, 0.175, 1) !important;
+}
+
+.refbutton.premium.free05>.refbutton-instance:not([disabled]):hover {
+	border-color: var(--br-h-color) !important;
+	background: transparent !important;
+	background-color: transparent !important;
+	border-radius: 30px!important;
+	transition: var(--transition) !important;
+}

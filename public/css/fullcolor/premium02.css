@@ -1,0 +1,68 @@
+.refbutton.premium.premium02>.refbutton-instance {
+	position: relative !important;
+	color: var(--text-color) !important;
+	background: transparent !important;
+	background-color: transparent !important;
+	user-select: none !important;
+}
+
+.refbutton.premium.premium02 .refbutton-instance,
+.refbutton.premium.premium02 .refbutton-instance *{
+	color: var(--text-color) !important;
+	fill: var(--text-color) !important;
+	transition: all var(--transition) cubic-bezier(0.77, 0, 0.175, 1) !important;
+}
+
+.refbutton.premium.premium02 .refbutton-instance:not([disabled]):hover,
+.refbutton.premium.premium02 .refbutton-instance:not([disabled]):hover *{
+	color: var(--text-h-color) !important;
+	fill: var(--text-h-color) !important;
+	transition-delay: var(--transition) !important;
+}
+
+.refbutton.premium.premium02>.refbutton-instance:not([disabled]):hover {
+	background: transparent !important;
+	background-color: transparent !important;
+	transition-delay: var(--transition) !important;
+}
+
+.refbutton.premium.premium02>.refbutton-instance::after,
+.refbutton.premium.premium02>.refbutton-instance::before {
+	content: "" !important;
+	position: absolute !important;
+	transition: inherit !important;
+	z-index: -1 !important;
+	left: 0 !important;
+	height: 0 !important;
+	width: 100% !important;
+}
+
+.refbutton.premium.premium02>.refbutton-instance::before {
+	top: 0 !important;
+	border: calc(var(--border-width) * 1px) solid var(--br-h-color) !important;
+	border-top: 0 !important;
+	border-bottom: 0 !important;
+	transition-delay: var(--transition) !important;
+}
+
+.refbutton.premium.premium02>.refbutton-instance::after {
+	background: var(--bg-h-color) !important;
+	bottom: 0 !important;
+	height: 0 !important;
+}
+
+.refbutton.premium.premium02>.refbutton-instance:not([disabled]):hover::before {
+	transition-delay: 0s !important;
+}
+
+.refbutton.premium.premium02>.refbutton-instance:not([disabled]):hover::after {
+	transition-delay: var(--transition) !important;
+	border-left: calc(var(--border-width) * 1px) solid var(--br-h-color);
+	border-right: calc(var(--border-width) * 1px) solid var(--br-h-color);
+}
+
+.refbutton.premium.premium02>.refbutton-instance:not([disabled]):hover:before,
+.refbutton.premium.premium02>.refbutton-instance:not([disabled]):hover:after {
+	height: 100% !important;
+	border-radius: var(--border-radius) !important;
+}

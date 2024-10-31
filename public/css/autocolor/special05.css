@@ -1,0 +1,70 @@
+.refbutton.premium.refbutton.premium.special05 {
+    perspective: 1500px!important;
+    display: flex!important;
+}
+
+.refbutton.premium.special05>.refbutton-instance,
+.refbutton.premium.special05>.refbutton-instance *{
+    position: relative !important;
+    background: transparent !important;
+    background-color: transparent !important;
+    color: transparent !important;
+    fill: transparent !important;
+    transform-style: preserve-3d !important;
+	transform: translateZ(calc(((var(--border-width) + 1) * -1) * 1px)) !important;
+    overflow: visible !important;
+	/* transform: translateZ(-25px); */
+    /* transition: transform var(--transition) !important; */
+}
+
+.refbutton.premium.special05 .refbutton-instance:not([disabled]):hover,
+.refbutton.premium.special05 .refbutton-instance:not([disabled]):hover *{
+    background: transparent !important;
+    background-color: transparent !important;
+    color: transparent !important;
+    fill: transparent !important;
+	transform: translateZ(calc(((var(--button-height-val) / 2) * -1) * 1px)) rotateX(-90deg)!important;
+	/* transform: translateZ(-25px) rotateX(-90deg)!important; */
+}
+
+.refbutton.premium.special05>.refbutton-instance::before,
+.refbutton.premium.special05>.refbutton-instance::after {
+    position: absolute!important;
+    content: attr(data-after-before)!important;
+    height: 100%!important;
+    width: 100%!important;
+    top: 0!important;
+    left: 0!important;
+    display: flex!important;
+    align-items: center!important;
+    justify-content: center!important;
+    border: calc(var(--border-width)*1px) solid var(--default-color)!important;
+    box-sizing: border-box!important;
+    border-radius: var(--border-radius)!important;
+}
+
+.refbutton.premium.special05>.refbutton-instance::after {
+    color: var(--default-color)!important;
+    background: var(--contrasted-text-color)!important;
+	transform: rotateX(90deg) translateZ(calc((var(--button-height-val) / 2) * 1px)) !important;
+    /* transform: rotateX(90deg) translateZ(25px)!important; */
+    /* opacity: 0!important; */
+}
+
+
+.refbutton.premium.special05>.refbutton-instance::before {
+    color: var(--contrasted-text-color)!important;
+    background: var(--default-color)!important;
+    transform: rotateY(0deg) translateZ(calc((var(--button-height-val) / 2) * 1px))!important;
+	/* transform: rotateY(0deg) translateZ(25px)!important; */
+}
+
+.refbutton.premium.special05>.refbutton-instance:not([disabled]):hover::before {
+    background: transparent!important;
+    /* opacity: 0!important; */
+}
+
+.refbutton.premium.special05>.refbutton-instance:not([disabled]):hover::after {
+    background: var(--contrasted-text-color)!important;
+    /* opacity: 1!important; */
+}

@@ -1,0 +1,117 @@
+.refbutton.premium.special02 .inner-background {
+	width: 100% !important;
+	height: 100% !important;
+	background: transparent !important;
+	z-index: -1 !important;
+	position: absolute !important;
+	border-radius: var(--border-radius);
+	width: var(--button-actual-width) !important;
+	padding: 0 !important;
+}
+
+.refbutton.premium.special02>.refbutton-instance {
+	background: transparent !important;
+	background-color: transparent !important;
+	color: var(--default-color) !important;
+}
+
+.refbutton.premium.special02 .refbutton-instance,
+.refbutton.premium.special02 .refbutton-instance *{
+	color: var(--default-color) !important;
+	fill: var(--default-color) !important;
+	transition: all var(--transition) cubic-bezier(0.77, 0, 0.175, 1) !important;
+	display: flex!important;
+}
+
+.refbutton.premium.special02>.refbutton-instance:not([disabled]):hover,
+.refbutton.premium.special02>.refbutton-instance:not([disabled]):hover *{
+	color: var(--contrasted-text-color) !important;
+	fill: var(--contrasted-text-color) !important;
+}
+
+.refbutton.premium.special02>.refbutton-instance::before {
+	content: "" !important;
+	z-index: 1 !important;
+	position: absolute !important;
+	left: 0 !important;
+	top: 0 !important;
+	width: 100% !important;
+	height: 100% !important;
+	border: calc(var(--border-width)*1px) solid var(--default-color) !important;
+	border-radius: var(--border-radius) !important;
+}
+
+.refbutton.premium.special02>.refbutton-instance::after {
+	content: "" !important;
+	z-index: -2 !important;
+	position: absolute !important;
+	left: 2px !important;
+	top: 2px !important;
+	width: 100% !important;
+	height: 100% !important;
+	border: none !important;
+	transition: all 0.3s 0.2s !important;
+	border-radius: var(--border-radius) !important;
+}
+
+.refbutton.premium.special02>.refbutton-instance:not([disabled]):hover::after {
+	transition: all 0.3s !important;
+	left: 0 !important;
+	top: 0 !important;
+}
+
+.refbutton.premium.special02 .blob-btn__inner {
+	z-index: -1 !important;
+	overflow: hidden !important;
+	position: absolute !important;
+	left: 0 !important;
+	top: 0 !important;
+	width: var(--button-actual-width) !important;
+	height: 100% !important;
+	padding: 0 !important;
+	border-radius: var(--border-radius) !important;
+}
+
+.refbutton.premium.special02 .blob-btn__blobs {
+	position: relative !important;
+	display: block !important;
+	height: 103% !important;
+	width: var(--button-actual-width) !important;
+	padding: 0 !important;
+}
+
+.refbutton.premium.special02 .blob-btn__blob {
+	position: absolute !important;
+	top: 6px !important;
+	width: 25% !important;
+	min-width: 25% !important;
+	height: 100% !important;
+	background: var(--default-color);
+	border-radius: 100% !important;
+	transform: translate3d(0, 150%, 0) scale(1.7);
+	transition: var(--transition);
+}
+
+.refbutton.premium.special02 .blob-btn__blob:nth-child(1) {
+	left: 0% !important;
+	transition-delay: 0s!important;
+}
+
+.refbutton.premium.special02 .blob-btn__blob:nth-child(2) {
+	left: 30% !important;
+	transition-delay: 0.08s!important;
+}
+
+.refbutton.premium.special02 .blob-btn__blob:nth-child(3) {
+	left: 60% !important;
+	transition-delay: 0.16s!important;
+}
+
+.refbutton.premium.special02 .blob-btn__blob:nth-child(4) {
+	left: 90% !important;
+	transition-delay: 0.24s!important;
+}
+
+.refbutton.premium.special02>.refbutton-instance:not([disabled]):hover .blob-btn__blob {
+	transform: translateZ(0) scale(1.7) !important;
+}

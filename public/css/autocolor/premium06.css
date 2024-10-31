@@ -1,0 +1,68 @@
+.refbutton.premium.premium06 > .refbutton-instance {
+	background: transparent !important;
+	background-color: transparent !important;
+	color: var(--default-color) !important;
+	/* overflow: hidden; */
+}
+
+.refbutton.premium.premium06 .refbutton-instance,
+.refbutton.premium.premium06 .refbutton-instance *{
+	color: var(--default-color) !important;
+	fill: var(--default-color) !important;
+	transition: all var(--transition) cubic-bezier(0.77, 0, 0.175, 1) !important;
+
+}
+
+.refbutton.premium.premium06 .refbutton-instance:not([disabled]):hover,
+.refbutton.premium.premium06 .refbutton-instance:not([disabled]):hover *{
+	color: var(--contrasted-text-color) !important;
+	fill: var(--contrasted-text-color) !important;
+	background: transparent !important;
+	background-color: transparent !important;
+	filter: contrast(1.2);
+	transform: rotateZ(0deg) translate(0%, 0%);
+}
+
+.refbutton.premium.premium06 > .refbutton-instance::before {
+	content: "";
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	right: 0px;
+	left: 0px;
+	background: transparent;
+	transform: scale(0, 0);
+	transform-origin: center center;
+	border-style: solid;
+	border-width: calc(var(--border-width)*1px);
+	border-color: transparent;
+	/* border: calc(var(--border-width)*1px) solid var(--default-color); */
+	border-radius: var(--border-radius) !important;
+}
+
+.refbutton.premium.premium06 > .refbutton-instance::after {
+	content: "";
+	position: absolute;
+	top: 4px;
+	bottom: 4px;
+	right: 4px;
+	left: 4px;
+	background: transparent;
+	border: calc(var(--border-width)*1px) solid var(--default-color);
+	border-radius: var(--border-radius) !important;
+	display: block;
+	z-index: -1;
+	transition: var(--transition);
+}
+
+.refbutton.premium.premium06 > .refbutton-instance:not([disabled]):hover::before {
+	border-color: var(--default-color);
+	transform: scale(1, 1);
+	transition: var(--transition);
+}
+
+.refbutton.premium.premium06 > .refbutton-instance:not([disabled]):hover::after {
+	background: var(--default-color);
+	transition: var(--transition);
+	transform: scale(0.95, 0.9) !important;
+}

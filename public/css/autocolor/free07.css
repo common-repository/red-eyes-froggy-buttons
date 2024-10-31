@@ -1,0 +1,24 @@
+.refbutton.premium.free07 > .refbutton-instance {
+    color: var(--default-color) !important;
+	background: transparent !important;
+	background-color: transparent !important;
+	border: calc(var(--border-width)*1px) solid var(--default-color) !important;
+	transition: all var(--transition) !important;
+    border-radius: var(--border-radius)!important;
+}
+
+.refbutton.premium.free07 .refbutton-instance,
+.refbutton.premium.free07 .refbutton-instance * {
+    color: var(--default-color) !important;
+    fill: var(--default-color) !important;
+}
+
+.refbutton.premium.free07 .refbutton-instance:not([disabled]):hover,
+.refbutton.premium.free07 .refbutton-instance:not([disabled]):hover *{
+	color: var(--default-color) !important;
+	fill: var(--default-color) !important;
+	background: transparent !important;
+	background-color: transparent !important;
+	transform: scale(1.2)!important;
+	transition: all var(--transition) !important;
+}

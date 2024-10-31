@@ -1,0 +1,41 @@
+.refbutton.free.free04>.refbutton-instance {
+	background: transparent !important;
+	background-color: transparent !important;
+	border: calc(var(--border-width)*1px) solid var(--default-color) !important;
+	color: var(--default-color) !important;
+	border-radius: var(--border-radius) !important;
+}
+
+.refbutton.free.free04 .refbutton-instance,
+.refbutton.free.free04 .refbutton-instance * {
+	background: transparent !important;
+	color: var(--default-color) !important;
+	fill: var(--default-color) !important;
+}
+
+.refbutton.free.free04 .refbutton-instance:not([disabled]):hover,
+.refbutton.free.free04 .refbutton-instance:not([disabled]):hover * {
+	color: var(--default-color) !important;
+	fill: var(--default-color) !important;
+	background: transparent !important;
+	background-color: transparent !important;
+}
+
+.refbutton.free.free04>.refbutton-instance::after {
+	position: absolute;
+	transition: var(--transition) !important;
+	content: "";
+	left: 0;
+	bottom: auto;
+	top: calc(-1 * calc(var(--border-width)*1px));
+	width: 100%;
+	height: calc((var(--border-width) + 1) * 1px);
+	opacity: 0;
+	background: var(--default-color) !important;
+}
+
+.refbutton.free.free04>.refbutton-instance:not([disabled]):hover:after {
+	/* top: calc(100% - calc(var(--border-width)*1px)); */
+	top: 100%;
+	opacity: 1;
+}

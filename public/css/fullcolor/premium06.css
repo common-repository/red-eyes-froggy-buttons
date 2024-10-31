@@ -1,0 +1,67 @@
+.refbutton.premium.premium06>.refbutton-instance {
+	background: transparent !important;
+	background-color: transparent !important;
+	color: var(--text-color) !important;
+	/* overflow: hidden; */
+}
+
+.refbutton.premium.premium06 .refbutton-instance,
+.refbutton.premium.premium06 .refbutton-instance *{
+	color: var(--text-color) !important;
+	fill: var(--text-color) !important;
+	transition: all var(--transition) cubic-bezier(0.77, 0, 0.175, 1) !important;
+}
+
+.refbutton.premium.premium06 .refbutton-instance:not([disabled]):hover,
+.refbutton.premium.premium06 .refbutton-instance:not([disabled]):hover *{
+	color: var(--text-h-color) !important;
+	fill: var(--text-h-color) !important;
+	background: transparent !important;
+	background-color: transparent !important;
+	filter: contrast(1.2) !important;
+	transform: rotateZ(0deg) translate(0%, 0%) !important;
+}
+
+.refbutton.premium.premium06>.refbutton-instance::before {
+	content: "" !important;
+	position: absolute !important;
+	top: 0px !important;
+	bottom: 0px !important;
+	right: 0px !important;
+	left: 0px !important;
+	background: transparent !important;
+	transform: scale(0, 0) !important;
+	transform-origin: center center !important;
+	border-style: solid !important;
+	border-width: calc(var(--border-width) * 1px) !important;
+	border-color: transparent !important;
+	border-radius: var(--border-radius) !important;
+}
+
+.refbutton.premium.premium06>.refbutton-instance::after {
+	content: "" !important;
+	position: absolute !important;
+	top: 4px !important;
+	bottom: 4px !important;
+	right: 4px !important;
+	left: 4px !important;
+	background: transparent !important;
+	border: calc(var(--border-width) * 1px) solid var(--br-color) !important;
+	border-radius: var(--border-radius) !important;
+	display: block !important;
+	z-index: -1 !important;
+	transition: var(--transition) !important;
+}
+
+.refbutton.premium.premium06>.refbutton-instance:not([disabled]):hover::before {
+	border-color: var(--br-h-color) !important;
+	transform: scale(1, 1) !important;
+	transition: all var(--transition) !important;
+}
+
+.refbutton.premium.premium06>.refbutton-instance:not([disabled]):hover::after {
+	border-color: var(--br-h-color) !important;
+	background: var(--bg-h-color) !important;
+	transition: all var(--transition) !important;
+	transform: scale(0.98, 0.9) !important;
+}

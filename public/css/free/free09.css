@@ -1,0 +1,33 @@
+.refbutton.free.free09 > .refbutton-instance,
+.refbutton.free.free09 > .refbutton-instance {
+	position: relative !important;
+	color: var(--contrasted-text-color) !important;
+	background: var(--default-color) !important;
+	background-color: var(--default-color) !important;
+    border: calc(var(--border-width) * 1px) solid var(--default-color) !important;
+	user-select: none !important;
+	border-radius: var(--border-radius) !important;
+	transition: all var(--transition) !important;
+}
+
+.refbutton.free.free09 .refbutton-instance,
+.refbutton.free.free09 .refbutton-instance * {
+	color: var(--contrasted-text-color) !important;
+	fill: var(--contrasted-text-color) !important;
+}
+
+.refbutton.free.free09 > .refbutton-instance:not([disabled]):hover {
+	--bw: calc((var(--border-width) + 1) * 1px);
+	color: var(--default-color) !important;
+	background: transparent !important;
+	background-color: transparent !important;
+	box-shadow: var(--shadow-inset,) 0 0 calc(2 * var(--bw)) var(--bw) var(--default-color) !important;
+	text-shadow: calc(2 * var(--bw)) var(--default-color),calc(2 * var(--bw)) var(--default-color),calc(2 * var(--bw)) var(--default-color) !important;
+    transition: all var(--transition)!important;
+}
+
+.refbutton.free.free09 .refbutton-instance:not([disabled]):hover,
+.refbutton.free.free09 .refbutton-instance:not([disabled]):hover * {
+	color: var(--default-color) !important;
+	fill: var(--default-color) !important;
+}

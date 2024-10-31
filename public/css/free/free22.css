@@ -1,0 +1,43 @@
+.refbutton.free.free22 > .refbutton-instance {
+	color: var(--default-color) !important;
+	background: transparent !important;
+	background-color: transparent !important;
+	border: calc(var(--border-width)*1px) solid var(--default-color) !important;
+	overflow: hidden !important;
+	border-radius: var(--border-radius) !important;
+}
+
+.refbutton.free.free22 .refbutton-instance,
+.refbutton.free.free22 .refbutton-instance * {
+	color: var(--default-color) !important;
+	fill: var(--default-color) !important;
+}
+
+.refbutton.free.free22 .refbutton-instance:not([disabled]):hover,
+.refbutton.free.free22 .refbutton-instance:not([disabled]):hover * {
+	color: var(--default-color) !important;
+	fill: var(--default-color) !important;
+	background: transparent !important;
+	background-color: transparent !important;
+}
+
+.refbutton.free.free22 > .refbutton-instance::after {
+	content: "" !important;
+	position: absolute !important;
+	background-image: -webkit-linear-gradient(transparent 50%, var(--default-color) 50%) !important;
+	background-image: -moz-linear-gradient(transparent 50%, var(--default-color) 50%) !important;
+	/* background-size: 10px 10px !important; */
+	background-size: var(--bg-lines-width) var(--bg-lines-width) !important;
+	opacity: 0 !important;
+	top: 50% !important;
+	left: 50% !important;
+	height: 0% !important;
+	width: 150% !important;
+	z-index: -1 !important;
+	transform: translateX(-50%) translateY(-50%) rotate(25deg) !important;
+}
+
+.refbutton.free.free22 > .refbutton-instance:not([disabled]):hover:after {
+	opacity: .6 !important;
+	height: 600% !important;
+}

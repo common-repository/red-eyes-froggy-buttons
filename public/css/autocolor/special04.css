@@ -1,0 +1,101 @@
+.refbutton.premium.special04>.refbutton-instance {
+	position: relative !important;
+	text-align: center !important;
+	color: var(--contrasted-text-color) !important;
+	background: var(--default-color) !important;
+	background-color: var(--default-color) !important;
+	border: calc(var(--border-width)*1px) solid var(--default-color) !important;
+	border-radius: var(--border-radius) !important;
+	overflow: visible !important;
+}
+
+.refbutton.premium.special04 .refbutton-instance,
+.refbutton.premium.special04 .refbutton-instance *{
+	color: var(--contrasted-text-color) !important;
+	fill: var(--contrasted-text-color) !important;
+	transition: all var(--transition) cubic-bezier(0.77, 0, 0.175, 1) !important;
+}
+
+.refbutton.premium.special04 .refbutton-instance:hover,
+.refbutton.premium.special04 .refbutton-instance:hover *{
+	color: var(--default-color) !important;
+	fill: var(--default-color) !important;
+	background: transparent !important;
+	background-color: transparent !important;
+	border: calc(var(--border-width)*1px) solid var(--default-color) !important;
+}
+
+.refbutton.premium.special04>.refbutton-instance::before,
+.refbutton.premium.special04>.refbutton-instance::after {
+	content: "" !important;
+	position: absolute !important;
+	top: -8px !important;
+	left: -8px !important;
+	right: -8px !important;
+	bottom: -8px !important;
+	-webkit-animation: clippath 3s infinite linear !important;
+	animation: clippath 3s infinite linear !important;
+	border: calc(var(--border-width)*1px) solid var(--default-color) !important;
+	border-radius: var(--border-radius) !important;
+}
+
+.refbutton.premium.special04>.refbutton-instance:hover::before,
+.refbutton.premium.special04>.refbutton-instance:hover::after {
+	top: 6px !important;
+	left: 6px !important;
+	right: 6px !important;
+	bottom: 6px !important;
+}
+
+.refbutton.premium.special04>.refbutton-instance::after {
+	-webkit-animation: clippath 3s infinite -1.5s linear !important;
+	animation: clippath 3s infinite -1.5s linear !important;
+}
+
+@-webkit-keyframes clippath {
+
+	0%,
+	100% {
+		-webkit-clip-path: inset(0 0 98% 0);
+		clip-path: inset(0 0 98% 0);
+	}
+
+	25% {
+		-webkit-clip-path: inset(0 98% 0 0);
+		clip-path: inset(0 98% 0 0);
+	}
+
+	50% {
+		-webkit-clip-path: inset(98% 0 0 0);
+		clip-path: inset(98% 0 0 0);
+	}
+
+	75% {
+		-webkit-clip-path: inset(0 0 0 98%);
+		clip-path: inset(0 0 0 98%);
+	}
+}
+
+@keyframes clippath {
+
+	0%,
+	100% {
+		-webkit-clip-path: inset(0 0 98% 0);
+		clip-path: inset(0 0 98% 0);
+	}
+
+	25% {
+		-webkit-clip-path: inset(0 98% 0 0);
+		clip-path: inset(0 98% 0 0);
+	}
+
+	50% {
+		-webkit-clip-path: inset(98% 0 0 0);
+		clip-path: inset(98% 0 0 0);
+	}
+
+	75% {
+		-webkit-clip-path: inset(0 0 0 98%);
+		clip-path: inset(0 0 0 98%);
+	}
+}

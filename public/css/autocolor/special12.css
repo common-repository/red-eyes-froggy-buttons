@@ -1,0 +1,38 @@
+.refbutton.premium.special13 {
+	background: transparent !important;
+	border-radius: var(--border-radius) !important;
+}
+
+.refbutton.premium.special12,
+.refbutton.premium.special12>.refbutton-instance {
+	width: var(--button-actual-width) !important;
+}
+
+.refbutton.premium.special12 > .refbutton-instance {
+	--h: var(--button-height);
+	background:
+		linear-gradient(var(--default-color) 0 0) no-repeat calc(200% - var(--_p, 0%)) 100%/200% var(--_p, calc(var(--border-width) * 1px)) !important;
+	color: var(--default-color-a) !important;
+	overflow: hidden !important;
+	text-shadow:
+		0 calc(-1*var(--_t, 0em)) var(--default-color),
+		0 calc(var(--h) - var(--_t, 0em)) var(--contrasted-text-color) !important;
+	transition: var(--transition) var(--_s, 0s), background-position var(--transition) calc(var(--transition) - var(--_s, 0s)) !important;
+	border-radius: var(--border-radius) !important;
+}
+
+.refbutton.premium.special12 .refbutton-instance *{
+	fill: var(--default-color) !important;
+	transition: var(--transition) var(--_s, 0s), background-position var(--transition) calc(var(--transition) - var(--_s, 0s)) !important;
+}
+
+.refbutton.premium.special12 .refbutton-instance:not([disabled]):hover *{
+	fill: var(--contrasted-text-color) !important;
+	transition: var(--transition) var(--_s, 0s), background-position var(--transition) calc(var(--transition) - var(--_s, 0s)) !important;
+}
+
+.refbutton.premium.special12 > .refbutton-instance:not([disabled]):hover {
+	--_t: var(--h);
+	--_p: 100%;
+	--_s: var(--transition);
+}

@@ -1,0 +1,42 @@
+.refbutton.free.free21 > .refbutton-instance {
+	color: var(--default-color) !important;
+	background: transparent !important;
+	background-color: transparent !important;
+	border: calc(var(--border-width)*1px) solid var(--default-color) !important;
+	overflow: hidden !important;
+	border-radius: var(--border-radius) !important;
+}
+
+.refbutton.free.free21 .refbutton-instance,
+.refbutton.free.free21 .refbutton-instance *{
+	color: var(--default-color) !important;
+	fill: var(--default-color) !important;
+}
+
+.refbutton.free.free21 .refbutton-instance:not([disabled]):hover,
+.refbutton.free.free21 .refbutton-instance:not([disabled]):hover * {
+	color: var(--default-color) !important;
+	fill: var(--default-color) !important;
+	background: transparent !important;
+	background-color: transparent !important;
+}
+
+.refbutton.free.free21 > .refbutton-instance::after {
+	content: "" !important;
+	position: absolute !important;
+	border: calc((var(--border-width) + 1) *1px) solid var(--default-color) !important;
+	opacity: 0 !important;
+	top: 50% !important;
+	left: 50% !important;
+	height: 0% !important;
+	width: 150% !important;
+	z-index: -1 !important;
+	transform: translateY(-50%) translateX(-50%) rotate(25deg) !important;
+	transition: opacity var(--transition) linear, height var(--transition) ease-in-out !important;
+}
+
+.refbutton.free.free21 > .refbutton-instance:not([disabled]):hover:after {
+	opacity: 1 !important;
+	height: calc(var(--button-actual-width) + calc(var(--button-height) * 1.5)) !important;
+	transition: opacity .1s linear, height var(--transition) ease-in-out !important;
+}

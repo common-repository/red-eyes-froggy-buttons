@@ -1,0 +1,47 @@
+.refbutton.premium.free04>.refbutton-instance {
+	background: transparent !important;
+	background-color: transparent !important;
+	border: calc(var(--border-width)*1px) solid var(--br-color) !important;
+	color: var(--text-color) !important;
+	border-radius: var(--border-radius) !important;
+}
+
+.refbutton.premium.free04 .refbutton-instance,
+.refbutton.premium.free04 .refbutton-instance *{
+	background: transparent !important;
+	color: var(--text-color) !important;
+	fill: var(--text-color) !important;
+	transition: all var(--transition) cubic-bezier(0.77, 0, 0.175, 1) !important;
+}
+
+.refbutton.premium.free04 .refbutton-instance:not([disabled]):hover,
+.refbutton.premium.free04 .refbutton-instance:not([disabled]):hover *{
+	color: var(--text-h-color) !important;
+	fill: var(--text-h-color) !important;
+	transition: all var(--transition) cubic-bezier(0.77, 0, 0.175, 1) !important;
+}
+
+.refbutton.premium.free04>.refbutton-instance:not([disabled]):hover {
+	border-color: var(--br-h-color) !important;
+	background: transparent !important;
+	background-color: transparent !important;
+}
+
+.refbutton.premium.free04>.refbutton-instance::after {
+	position: absolute;
+	transition: var(--transition) !important;
+	content: "";
+	left: 0;
+	bottom: auto;
+	top: calc(-1 * calc(var(--border-width)*1px));
+	width: 100%;
+	height: calc((var(--border-width) + 1) * 1px);
+	opacity: 0;
+	background: var(--br-h-color) !important;
+}
+
+.refbutton.premium.free04>.refbutton-instance:not([disabled]):hover:after {
+	/* top: calc(100% - calc(var(--border-width)*1px)); */
+	top: 100%;
+	opacity: 1;
+}

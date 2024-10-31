@@ -1,0 +1,56 @@
+.refbutton.premium.special07>.refbutton-instance {
+	position: relative !important;
+	display: inline-flex !important;
+	background: var(--bg-color) !important;
+	background-color: var(--bg-color) !important;
+	color: var(--text-color) !important;
+	border: calc(var(--border-width) * 1px) solid var(--br-color) !important;
+	border-radius: var(--border-radius) !important;
+	overflow: hidden !important;
+	transition-duration: var(--transition) !important;
+}
+
+.refbutton.premium.special07 .refbutton-instance,
+.refbutton.premium.special07 .refbutton-instance *{
+	color: var(--text-color) !important;
+	fill: var(--text-color) !important;
+	transition: all var(--transition) cubic-bezier(0.77, 0, 0.175, 1) !important;
+}
+
+.refbutton.premium.special07>.refbutton-instance::before,
+.refbutton.premium.special07>.refbutton-instance span {
+	margin: 0 auto !important;
+	transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1) !important;
+	transition-duration: var(--transition) !important;
+	/* transition: var(--transition); */
+}
+
+.refbutton.premium.special07 .refbutton-instance:not([disabled]):hover,
+.refbutton.premium.special07 .refbutton-instance:not([disabled]):hover *{
+	color: var(--text-h-color) !important;
+	fill: var(--text-h-color) !important;
+	background: var(--bg-h-color) !important;
+	background-color: var(--bg-h-color) !important;
+	border: calc(var(--border-width) * 1px) solid var(--br-h-color) !important;
+}
+
+.refbutton.premium.special07>.refbutton-instance:not([disabled]):hover span {
+	color: transparent !important;
+	-webkit-transform: translateY(-400%) scale(0, 20) !important;
+	transform: translateY(-400%) scale(0, 20) !important;
+}
+
+.refbutton.premium.special07>.refbutton-instance::before {
+	content: attr(data-button-text) !important;
+	color: transparent !important;
+	position: absolute !important;
+	margin: auto !important;
+	-webkit-transform: translateY(500%) scale(-0.1, 20) !important;
+	transform: translateY(500%) scale(-0.1, 20) !important;
+}
+
+.refbutton.premium.special07>.refbutton-instance:not([disabled]):hover::before {
+	color: var(--text-h-color) !important;
+	-webkit-transform: translateY(0) scale(1, 1) !important;
+	transform: translateY(0) scale(1, 1) !important;
+}

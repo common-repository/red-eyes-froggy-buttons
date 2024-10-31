@@ -1,0 +1,39 @@
+.refbutton.free.free13>.refbutton-instance {
+	color: var(--default-color) !important;
+	background: transparent !important;
+	background-color: transparent !important;
+	border: calc(var(--border-width)*1px) solid var(--default-color) !important;
+	overflow: hidden !important;
+	border-radius: var(--border-radius) !important;
+}
+
+.refbutton.free.free13 .refbutton-instance,
+.refbutton.free.free13 .refbutton-instance * {
+	color: var(--default-color) !important;
+	fill: var(--default-color) !important;
+	transition: all var(--transition) cubic-bezier(0.77, 0, 0.175, 1) !important;
+}
+
+.refbutton.free.free13 .refbutton-instance:not([disabled]):hover,
+.refbutton.free.free13 .refbutton-instance:not([disabled]):hover * {
+	color: var(--contrasted-text-color) !important;
+	fill: var(--contrasted-text-color) !important;
+	background: transparent !important;
+	background-color: transparent !important;
+}
+
+.refbutton.free.free13>.refbutton-instance::after {
+	content: "" !important;
+	position: absolute !important;
+	height: 0% !important;
+	left: 50% !important;
+	top: 50% !important;
+	width: 150% !important;
+	z-index: -1 !important;
+	background: var(--default-color) !important;
+	transform: translateY(-50%) translateX(-50%) rotate(90deg) !important;
+}
+
+.refbutton.free.free13>.refbutton-instance:not([disabled]):hover:after {
+	height: var(--button-actual-width) !important;
+}

@@ -1,0 +1,36 @@
+.refbutton.premium.free01>.refbutton-instance {
+	background: transparent !important;
+	background-color: transparent !important;
+	border: calc(var(--border-width)*1px) solid var(--default-color) !important;
+	color: var(--default-color) !important;
+}
+
+.refbutton.premium.free01 .refbutton-instance,
+.refbutton.premium.free01 .refbutton-instance * {
+	color: var(--default-color) !important;
+	fill: var(--default-color) !important;
+}
+
+.refbutton.premium.free01 .refbutton-instance:not([disabled]):hover,
+.refbutton.premium.free01 .refbutton-instance:not([disabled]):hover *{
+	color: var(--default-color) !important;
+	fill: var(--default-color) !important;
+	background: transparent !important;
+	background-color: transparent !important;
+}
+
+.refbutton.premium.free01>.refbutton-instance::after {
+	position: absolute;
+	transition: var(--transition) !important;
+	content: "";
+	width: 0;
+	left: 50%;
+	bottom: 0;
+	height: calc((var(--border-width) + 1) * 1px);
+	background: var(--default-color) !important;
+}
+
+.refbutton.premium.free01>.refbutton-instance:not([disabled]):hover:after {
+	width: 100%;
+	left: 0;
+}

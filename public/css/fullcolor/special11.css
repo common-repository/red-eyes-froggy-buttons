@@ -1,0 +1,47 @@
+.refbutton.premium.special11 {
+	background: var(--bg-color) !important;
+	width: auto !important;
+	height: var(--button-height);
+	border-radius: var(--border-radius) !important;
+}
+
+.refbutton.premium.special11,
+.refbutton.premium.special11>.refbutton-instance {
+	width: var(--button-actual-width) !important;
+}
+
+.refbutton.premium.special11>.refbutton-instance {
+	--h: var(--button-height) !important;
+	color: var(--text-color-a) !important;
+	overflow: hidden !important;
+	text-shadow:
+		0 var(--_t, var(--h)) var(--text-h-color),
+		0 0 var(--_c, var(--text-color)) !important;
+	background:
+		linear-gradient(var(--bg-h-color) 0 0) bottom/100% var(--_d, 0) no-repeat !important;
+	border-radius: var(--border-radius) !important;
+	border: calc(var(--border-width) * 1px ) solid var(--br-color)!important;
+	margin-top: 0!important;
+	margin-right: 0!important;
+	margin-bottom: 0!important;
+	margin-left: 0!important;
+
+}
+
+.refbutton.premium.special11  .refbutton-instance *{
+	fill: var(--text-color) !important;
+	transition: all var(--transition) cubic-bezier(0.77, 0, 0.175, 1) !important;
+}
+
+.refbutton.premium.special11 > .refbutton-instance:not([disabled]):hover *{
+	fill: var(--text-h-color)!important;
+	transition: all var(--transition) cubic-bezier(0.77, 0, 0.175, 1) !important;
+	z-index:9999;
+}
+
+.refbutton.premium.special11 > .refbutton-instance:not([disabled]):hover {
+	--_d: 100% !important;
+	--_t: 0 !important;
+	--_c: var(--text-color-a) !important;
+	border: calc(var(--border-width) * 1px ) solid var(--br-h-color)!important;
+}
